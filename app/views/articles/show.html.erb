@@ -1,0 +1,18 @@
+<% cache @article do %>
+  <h1><%= @article.title %></h1>
+  <%= @article.description %>
+<% end %>
+
+<%= link_to "Back", articles_path %>
+<%= link_to "Edit", edit_article_path(@article) %>
+
+
+<div id="article">
+  <div>
+    <%=  link_to @article.url, @article.url, target: "_blank", rel: "noopener noreferrer"  %>
+    <%= @article.content %>
+    </div>
+</div>
+
+<%= button_to "Delete", @article, method: :delete, data: {turbo_confirm: "Are you sure?"} %>
+

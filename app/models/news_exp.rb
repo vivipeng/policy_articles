@@ -1,0 +1,2 @@
+class NewsExp < ApplicationRecord
+end

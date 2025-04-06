@@ -1,0 +1,2 @@
+class ZfbgHtml < ApplicationRecord
+end
